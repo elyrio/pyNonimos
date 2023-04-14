@@ -75,9 +75,11 @@ class Tela():
 app = tk.Tk()
 app.title("PyNonimos - PMSMJ")
 app.geometry("800x600")
+app.iconbitmap("brasao.ico")
 app.minsize(height=600, width=800)
 app.maxsize(height=600, width=800)
 app.configure(background="#f2f8fb")
+
 
 Tela(app)
 app.mainloop()
