@@ -12,8 +12,7 @@ import os
 class Tela():
 
     def abrirArquivo(self):
-        self.filename = filedialog.askopenfilename(initialdir="/",
-                                                   title="Selecione um arquivo",
+        self.filename = filedialog.askopenfilename(title="Selecione um arquivo PDF",
                                                    filetypes=(("PDf",
                                                                "*.pdf*"),
                                                               ))
@@ -42,7 +41,7 @@ class Tela():
     
     def show_about(self):
         tk.messagebox.showinfo(
-            title='Sobre - pyNonimos', message='Aplicativo desenvolvido pela Controladoria Interna da Prefeitrua Municipal de Santa Maria de Jetibá - ES. \n \n  A anonimização de PDF é um processo importante para proteger informações sensíveis e garantir a privacidade dos usuários. \n O projeto consiste em uma aplicação desktop que permite aos usuários anonimizar arquivos PDF selecionados. A aplicação é desenvolvida em Python. \n \n Versão : 1.0 \n Desenvolvedor: Ewerton Lyrio Nascimento \n Março de 2023.')
+            title='Sobre - pyNonimos', message='Aplicativo desenvolvido pela Controladoria Interna da Prefeitrua Municipal de Santa Maria de Jetibá - ES. \n \n  A anonimização de PDF é um processo importante para proteger informações sensíveis e garantir a privacidade dos usuários. \n O projeto consiste em uma aplicação desktop que permite aos usuários anonimizar arquivos PDF selecionados. A aplicação é desenvolvida em Python. \n \n Versão : 1.0 - beta \n Desenvolvedor: Ewerton Lyrio Nascimento \n Março de 2023.')
     
 
     def __init__(self, master):
